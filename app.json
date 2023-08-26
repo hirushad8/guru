@@ -1,0 +1,45 @@
+{
+  "name": "whatsapp-bot (HD-GURU-BOT)",
+  "description": " Whatsapp bot.",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/Guru322/GURU-BOT",
+  "stack": "container",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "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",
+      "required": false,
+      "value": "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"
+    },
+    "OPENAI_ORGANIZATION": {
+      "description": "HD TECH",
+      "required": false,
+      "value": "HD TECH"
+    },
+    "MONGO_DB": {
+      "description": "mongodb+srv://hirushad8:h1234!@#$cccM@cluster0.cefjyty.mongodb.net/?retryWrites=true&w=majority",
+      "required": false,
+      "value": "mongodb+srv://hirushad8:h1234!@#$cccM@cluster0.cefjyty.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "REMOVE_BG_API_KEY": {
+      "description": "sQdwZnxGYTnsQpevD2AwKSvy",
+      "required": false,
+      "value": "sQdwZnxGYTnsQpevD2AwKSvy"
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
